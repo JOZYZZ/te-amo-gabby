@@ -20,7 +20,8 @@ export default function TextHeart() {
     let animationFrameId: number;
     let points: Point[] = [];
     const text = "TE AMO GABBY 💜 🐥";
-    const fontSize = 14;
+    const isMobile = window.innerWidth < 768;
+const fontSize = isMobile ? 9 : 14;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -32,7 +33,7 @@ export default function TextHeart() {
       points = [];
       const centerX = canvas.width / 2;
       const centerY = canvas.height / 2;
-      const scale = Math.min(canvas.width, canvas.height) / 45;
+      const scale = Math.min(canvas.width, canvas.height) / (isMobile ? 32 : 45);
 
       // Heart equation: 
       // x = 16 sin^3(t)

@@ -114,9 +114,9 @@ export default function App() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 3, duration: 1.5 }}
-              className="z-20 text-center absolute top-12 left-1/2 -translate-x-1/2"
+              className="z-20 text-center absolute top-8 md:top-12 left-1/2 -translate-x-1/2 w-full px-4"
             >
-              <h2 className="text-pink-deep font-mono text-xl tracking-[0.3em] uppercase glow-text mb-2">
+              <h2 className="text-pink-deep font-mono text-2xl md:text-4xl tracking-[0.12em] md:tracking-[0.2em] uppercase glow-text mb-2">
                 TE AMO GABBY 💜 🐥✨
               </h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
